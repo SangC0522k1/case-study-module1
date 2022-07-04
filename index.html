@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>module1</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="shared">
+    <div class="banner">
+      <img src="img/banner2.jpg" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="">TRANG CHỦ</a></li>
+        <li><a href="">ĐIỆN THOẠI</a></li>
+        <li><a href="">LOẠI</a></li>
+        <li><a href="">GIÁ</a></li>
+      </ul>
+      <div class="form">
+        <label for="keyword" style="width: 60px;">Search:</label>
+        <input type="search" oninput="search()" id="keyword" required class="text" placeholder="Tìm Kiếm">
+        <!-- <input type="submit" value="tìm kiếm" class="timkiem button"> -->
+      </div>
+    </div>
+    <div class="logo">
+      <img src="img/banner.jpg" alt="">
+      <tr>
+        <td><label for="id" >Name: </label></td>
+        <td><input type="text" placeholder="tên sản phẩm" id="productName" class="input"/></td>
+      </tr>
+      <tr>
+        <td><label for="number" >Price: </label></td>
+        <td><input type="text" placeholder="giá" id="productPrice" class="input"/></td>
+      </tr>
+      <tr>
+        <td><label for="name" >color: </label></td>
+        <td> <input type="text" placeholder="Màu" id="productColor" class="input"/></td>
+      </tr>
+      <tr>
+        <label for=""></label>
+      <button id="btn_add" onclick="add()" class="button">Add</button>
+      </tr>
+    </div>
+    
+    <div id="database">
+      <table border="1" class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </div>
+    <script src="index.js"></script>
+    
+
+</html>
